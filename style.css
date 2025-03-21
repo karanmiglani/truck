@@ -1,0 +1,296 @@
+/* General Styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff8c00; /* Bright truck-like orange */
+    padding: 12px 20px;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffe066 !important;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 35px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+/* About Us Section */
+.about-us {
+    background: linear-gradient(135deg, #ff8c00, #ff6600);
+    color: white;
+    text-align: center;
+    padding: 60px 30px;
+    border-radius: 12px;
+    margin-top: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 0;
+    background: #e6f2ff;
+}
+
+.service-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Page */
+.contact-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    margin: 80px auto;
+    max-width: 600px;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: #ff8c00;
+    font-size: 1.5rem;
+}
+
+/* Tracking Page */
+.track-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/977213/pexels-photo-977213.jpeg') no-repeat center center/cover;
+    background-attachment: fixed; /* Parallax Effect */
+}
+
+.track-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.track-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.track-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff8c00;
+}
+
+.track-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.track-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.track-form input:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: #ff8c00;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #e67e00;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-text {
+        font-size: 2rem;
+    }
+    .track-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        height: 400px;
+    }
+    .hero-text {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+    }
+    .about-us {
+        padding: 40px 20px;
+    }
+    .about-us h2 {
+        font-size: 1.8rem;
+    }
+    .about-us p {
+        font-size: 1rem;
+    }
+    .track-card {
+        width: 90%;
+    }
+    .contact-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+    .track-card {
+        width: 95%;
+        padding: 30px;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+.track-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #ff8c00;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.track-btn:hover {
+    background-color: #e67e00;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .track-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}

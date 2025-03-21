@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Tracking - Transport Company</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Transport Co.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="track.html">Track</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <img src="https://images.pexels.com/photos/977213/pexels-photo-977213.jpeg" alt="Truck on road">
+        <div class="hero-text">Track Your Shipment in Real-Time</div>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Live Tracking</h2>
+        <div class="card p-4 shadow-lg">
+            <form>
+                <div class="mb-3">
+                    <label for="builtiNumber" class="form-label">Builti Number</label>
+                    <input type="text" class="form-control" id="builtiNumber" placeholder="Enter Builti Number">
+                </div>
+                <div class="mb-3">
+                    <label for="gstNumber" class="form-label">GST Number</label>
+                    <input type="text" class="form-control" id="gstNumber" placeholder="Enter GST Number">
+                </div>
+                <div class="mb-3">
+                    <label for="truckNumber" class="form-label">Truck Number</label>
+                    <input type="text" class="form-control" id="truckNumber" placeholder="Enter Truck Number">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Track</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="text-center mt-5 p-3">
+        <p>&copy; 2025 Transport Co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
