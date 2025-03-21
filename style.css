@@ -1,4 +1,13 @@
 /* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 body {
     background-color: #f4f4f4;
     font-family: 'Poppins', sans-serif;
